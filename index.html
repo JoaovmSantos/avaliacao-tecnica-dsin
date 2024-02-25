@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cabeleleila Leila Salão de Beleza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Escolha uma opção</h2>
+                        <div class="text-center">
+                            <a href="agendamento.html" target="_blank" class="btn btn-primary btn-block mb-2">Cliente</a>
+                            <button class="btn btn-secondary btn-block" onclick="verificarSenha()">Funcionário</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function verificarSenha() {
+            const senhaDigitada = prompt('Digite a senha de funcionário:');
+
+            if (senhaDigitada === 'leila123') {
+                window.location.href = 'clientesAgendados.html';
+            } else {
+                alert('Senha incorreta. Tente novamente.');
+            }
+        }
+    </script>
+
+</body>
+</html>
